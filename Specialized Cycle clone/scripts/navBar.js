@@ -11,7 +11,7 @@ document.querySelector(".navlogo").addEventListener("click", function () {
 
   // Redirect to the homepage after 1 second
   setTimeout(function () {
-    window.location.href = ".index.html";
+    window.location.href = "/Web-App-Projeccts/Specialized Cycle clone/index.html";
   }, 200);
 });
 // ================================================================= redirection with overlay on homepage end============================================================= >>

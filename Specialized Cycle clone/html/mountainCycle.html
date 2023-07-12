@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>specialized/signin</title>
-    <link rel="stylesheet" href="../style/signin.css" />
-    <link rel="stylesheet" href="../style/navBar.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productOff_road</title>
+
+ 
+ <link rel="stylesheet" href="../style/productPage.css" />
+<link rel="stylesheet" href="../style/navBar.css" />
     <link rel="stylesheet" href="../style/footer.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-  </head>
-  <body>
+ 
+</head>
+<body>
+     <!--nav-->
     <div id="navbar-container">
       <div class="navbar">
         <div class="logo-menu navlogo" id="logo-menu">
           <nav>
             <img src="../Images/logo.png" class="navlogo" alt="logo" />
             <ul>
-              <li><a href="catalogue.html">Catalog</a></li>
+              <li><a href="signin.html  ">Catalog</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
               <li><a href="#">Support</a></li>
@@ -51,7 +55,7 @@
               </div>
               <hr />
 
-             <a href="cart.html" class="sub-menu-link">
+              <a href="cart.html" class="sub-menu-link">
                 <img src="../Images/profile.png" />
                 <p>Cart</p>
                 <span> > </span>
@@ -66,12 +70,12 @@
                 <p>Settings</p>
                 <span> > </span>
               </a>
-              <a href="wishlist.html" class="sub-menu-link">
+              <a href="./wishlist.html" class="sub-menu-link">
                 <img src="../Images/help.png" />
                 <p>Wishlist</p>
                 <span> > </span>
               </a>
-              <a href="" class="sub-menu-link" id="logoutButton">
+              <a href="#" class="sub-menu-link" id="logoutButton">
                 <img src="../Images/logout.png" />
                 <p>Logout</p>
                 <span> > </span>
@@ -93,67 +97,128 @@
      <!-- overlay loading container ends  -->
      <!--nav ends-->
 
-  <!-- =====================================================================signin-->   
-    <div id = "signin-container">
+
+<!-- main body -->
+<div id="main">
+    <div id="sorting">
+        <h4>SORT BY PRICE:</h4>
+
+        <button id="low">Low To High</button>
+        <button id="high">High To Low</button>
+
+
+
+
     
-    <form action="/signin" id="signin-form" method="post">
-      <h2>Sign In to your Account</h2>
-      <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-      </div>
-      <div class="password-toggle">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required />
-        <span id="password-toggle">Show</span>
-      </div>
-
-      <div class="remember-forgot">
-        <div>
-          <label for="remember-me">
-            <input type="checkbox" id="rememberme" name="rememberme" />
-            <span class="checkbox-label">Remember ME</span>
-          </label>
-        </div>
-
-        <div>
-          <a href="#" class="forgot-password">Forgot password?</a>
-        </div>
-      </div>
-
-      <p>
-        I accept the Specialized Terms of Use and acknowledge Specialized will
-        use my information in accordance with its
-        <a
-          href="https://www.specialized.com/us/en/privacy-policy"
-          target="_blank"
-          >Privacy Policy</a
-        >.
-      </p>
-
-      <div>
-        <button type="submit" id="button">Sign In</button>
-      </div>
-      <p id="signup">
-        <a href="signup.html">Create Account</a>
-      </p>
-    </form>
-
-    <!--------------------------------------------------------------- signin succesfull redirection overlay end--------------------------------------------------------------------->
-
-    <div class="signin-successful-overlay" id="signin-successful-overlay" style="display: none">
-      <div class="signin-successful-overlay-content">
-        <h3>Login succesfull</h3>
-        <div class="loading-gif">
-          <img src="../Images/Loading gif.gif" alt="Loading" />
-          <p>Redirecting to Homepage...</p>
-        </div>
-      </div>
     </div>
-    </div>
-    <!--------------------------------------------------------------- signin succesfull redirection overlay end--------------------------------------------------------------------->
+    <div id="maindiv">
+        <div id="filterdiv">
+            <h2>OFF ROAD</h2>
 
-    <div id="footer-container">
+            
+            <!-- <div>
+                <select id="category">
+                    <option value="">CATEGORY</option>
+                    <option value="Off_roading">Off Roading</option>
+                    <option value="Electric">Electric</option>
+                    <option value="Kid">Kid</option>
+                </select>
+            </div> -->
+            
+            <div>
+
+                <select id="material">
+                    <option value="">MATERIAL</option>
+                    <option value="aluminum">Aluminum</option>
+                    <option value="alloy">Alloy</option>
+                    
+                </select>
+            </div>
+            
+            <div>
+
+                <select id="size">
+                    <option value="">SIZE</option>
+                    <option value="s2">S2</option>
+                    <option value="s3">S3</option>
+                    <option value="s4">S4</option>
+                    
+                </select>
+            </div>
+            
+            <div>
+
+                <select id="color">
+                    <option value="">COLOUR</option>
+                    <option value="black">⚫</option>
+                    <!-- <option value="Red">🔴</option> -->
+                    <option value="Green">🟢</option>
+                </select>
+            </div>
+            
+            <div>
+
+                <select id="break">
+                    <option value="">BRAKE TYPE</option>
+                    <option value="disc">Disc</option>
+                    <option value="none">None</option>
+                    
+                </select>
+            </div>
+            
+            <div>
+
+                <select id="suspension">
+                    <option value="">SUSPENSION</option>
+                    <option value="font">Font</option>
+                    <option value="font_rear">Font and Rear</option>
+                    
+                </select>
+            </div>
+    
+
+    
+            <div>
+
+                <select id="wheel">
+                    <option value="">WHEELSIZE</option>
+                    <option value="29/27.5">29/27.5</option>
+                    <option value="28/26.5">28/26.5</option>
+                    <option value="25/23.5">25/23.5</option>
+                    
+                </select>
+            </div>
+    
+            <div>
+
+
+                <select id="year">
+                    <option value="">MODEL YEAR</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    
+                    
+                </select>
+            </div>
+    
+           
+    
+        </div>
+       <div id="products">
+        
+        
+       </div>
+           
+    </div>
+
+    <div id="pagination1"></div>
+</div>
+
+
+
+
+    	<footer id="footer">
+         <div id="footer-container">
     <div id="footer">
         <div class="footer_top">
             <div class="Social_media">
@@ -230,15 +295,15 @@
                     style="color: #eb001b; font-size: 14px; line-height: 1;">&copy;</span>&nbsp;
                 1997 - 2022. Specialized Bicycle Components, Inc. All Rights Reserved
             </p>
-            <p class="animated-text" style="color: #c68409;">Created with <span style="color: red;">&hearts;</span> in <span style="color: #ebe2e3;">masai</span> <span style="color: goldenrod;">&#x1F60A;</span></p>
+            <p class="animated-text" style="color: #c68409; overflow: hidden;">Created with <span style="color: red;">&hearts;</span> in <span style="color: #ebe2e3;">masai</span> <span style="color: goldenrod;">&#x1F60A;</span></p>
         </div>
     </div>
 </div>
-  </body>
+
+    </footer>
+</body>
 </html>
-
-<script type="module" src="../scripts/signin.js"></script>
-
+<script src="../scripts/mountainCycle.js"></script>
 <script
   type="module"
   src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -250,3 +315,11 @@
 <script type="module" src="../scripts/navBar.js"></script>
 
 
+
+
+    
+
+    <script src="https://kit.fontawesome.com/593dd93f4e.js" crossorigin="anonymous"></script>
+
+
+    <script src="https://kit.fontawesome.com/593dd93f4e.js" crossorigin="anonymous"></script>

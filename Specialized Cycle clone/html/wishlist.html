@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>specialized/signin</title>
-    <link rel="stylesheet" href="../style/signin.css" />
-    <link rel="stylesheet" href="../style/navBar.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://www.specialized.com/_ui/addons/specializedstorefrontaddon/desktop/common/images/favicon.ico?v=1.1"/>
+   
+    <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"  />
+    <script src="https://kit.fontawesome.com/f5664c1180.js"  crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&family=Roboto+Condensed:wght@400;700&family=Wix+Madefor+Text:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style/wishlist.css" />
+<link rel="stylesheet" href="../style/navBar.css" />
     <link rel="stylesheet" href="../style/footer.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-  </head>
-  <body>
+    <title>Wish List</title>
+</head>
+<body id="body">
+   <!--nav-->
+  <!--nav-->
     <div id="navbar-container">
       <div class="navbar">
         <div class="logo-menu navlogo" id="logo-menu">
           <nav>
             <img src="../Images/logo.png" class="navlogo" alt="logo" />
             <ul>
-              <li><a href="catalogue.html">Catalog</a></li>
+              <li><a href="../signin.html  ">Catalog</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
               <li><a href="#">Support</a></li>
@@ -51,12 +61,12 @@
               </div>
               <hr />
 
-             <a href="cart.html" class="sub-menu-link">
-                <img src="../Images/profile.png" />
+              <a href="cart.html" class="sub-menu-link">
+                <img src="../Images/Cart icon.png" />
                 <p>Cart</p>
                 <span> > </span>
               </a>
-              <a href="#" class="sub-menu-link catalogue-link">
+              <a href="catalogue.html" class="sub-menu-link catalogue-link">
                 <img src="../Images/profile.png" />
                 <p>Catalogue</p>
                 <span> > </span>
@@ -67,11 +77,11 @@
                 <span> > </span>
               </a>
               <a href="wishlist.html" class="sub-menu-link">
-                <img src="../Images/help.png" />
+                <img src="../Images/whishlist.png" />
                 <p>Wishlist</p>
                 <span> > </span>
               </a>
-              <a href="" class="sub-menu-link" id="logoutButton">
+              <a href="signin.html" class="sub-menu-link" id="logoutButton">
                 <img src="../Images/logout.png" />
                 <p>Logout</p>
                 <span> > </span>
@@ -93,67 +103,33 @@
      <!-- overlay loading container ends  -->
      <!--nav ends-->
 
-  <!-- =====================================================================signin-->   
-    <div id = "signin-container">
-    
-    <form action="/signin" id="signin-form" method="post">
-      <h2>Sign In to your Account</h2>
-      <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-      </div>
-      <div class="password-toggle">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required />
-        <span id="password-toggle">Show</span>
-      </div>
 
-      <div class="remember-forgot">
-        <div>
-          <label for="remember-me">
-            <input type="checkbox" id="rememberme" name="rememberme" />
-            <span class="checkbox-label">Remember ME</span>
-          </label>
-        </div>
+        
+  </div>
 
-        <div>
-          <a href="#" class="forgot-password">Forgot password?</a>
+
+  
+   
+</div>
+
+    <div id="header"></div>
+    <div id="containerWishList">
+        <!-- <h2>WishList</h2> -->
+        <div id="sub-container">
+          <div id="sub-left">
+            <div class="sub-left-second">
+              <div id="WishlistItems">
+                <!-- show items here -->
+                <div id="WishlistItemsTable"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <p>
-        I accept the Specialized Terms of Use and acknowledge Specialized will
-        use my information in accordance with its
-        <a
-          href="https://www.specialized.com/us/en/privacy-policy"
-          target="_blank"
-          >Privacy Policy</a
-        >.
-      </p>
-
-      <div>
-        <button type="submit" id="button">Sign In</button>
-      </div>
-      <p id="signup">
-        <a href="signup.html">Create Account</a>
-      </p>
-    </form>
-
-    <!--------------------------------------------------------------- signin succesfull redirection overlay end--------------------------------------------------------------------->
-
-    <div class="signin-successful-overlay" id="signin-successful-overlay" style="display: none">
-      <div class="signin-successful-overlay-content">
-        <h3>Login succesfull</h3>
-        <div class="loading-gif">
-          <img src="../Images/Loading gif.gif" alt="Loading" />
-          <p>Redirecting to Homepage...</p>
-        </div>
-      </div>
-    </div>
-    </div>
-    <!--------------------------------------------------------------- signin succesfull redirection overlay end--------------------------------------------------------------------->
-
-    <div id="footer-container">
+      <!-- footer -->
+    	<footer id="footer">
+         <div id="footer-container">
     <div id="footer">
         <div class="footer_top">
             <div class="Social_media">
@@ -230,15 +206,16 @@
                     style="color: #eb001b; font-size: 14px; line-height: 1;">&copy;</span>&nbsp;
                 1997 - 2022. Specialized Bicycle Components, Inc. All Rights Reserved
             </p>
-            <p class="animated-text" style="color: #c68409;">Created with <span style="color: red;">&hearts;</span> in <span style="color: #ebe2e3;">masai</span> <span style="color: goldenrod;">&#x1F60A;</span></p>
+            <p class="animated-text" style="color: #c68409; overflow: hidden;">Created with <span style="color: red;">&hearts;</span> in <span style="color: #ebe2e3;">masai</span> <span style="color: goldenrod;">&#x1F60A;</span></p>
         </div>
     </div>
 </div>
-  </body>
+
+    </footer>
+
+</body>
 </html>
-
-<script type="module" src="../scripts/signin.js"></script>
-
+<script src="../scripts/wishlist.js"></script>
 <script
   type="module"
   src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -250,3 +227,11 @@
 <script type="module" src="../scripts/navBar.js"></script>
 
 
+
+
+    
+
+    <script src="https://kit.fontawesome.com/593dd93f4e.js" crossorigin="anonymous"></script>
+
+
+    <script src="https://kit.fontawesome.com/593dd93f4e.js" crossorigin="anonymous"></script>

@@ -1,0 +1,193 @@
+/* nav____________________ */
+
+/* ______________nabar__________ */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #464445;
+}
+
+main {
+  /* background-color: aqua; */
+  color: #1c1c1cda;
+  font-size: 15px;
+}
+#mainDiv {
+  display: flex;
+  background-color: white;
+  margin-bottom: 15px;
+  border-radius: 7px;
+}
+#mainDiv input {
+  width: 12%;
+  margin: 0px 5px;
+  text-align: center;
+}
+
+#mainDiv div {
+  margin: auto;
+  margin-left: 10px;
+  /*  */
+  /* border: 1px solid red; */
+}
+#mainDiv img {
+  height: 120px;
+  /* margin-left: 30%; */
+  /* padding: 30%     ; */
+}
+#mainDiv > div:first-child img:first-child {
+  height: 120px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  /* margin-left: 30%; */
+  /* padding: 30%     ; */
+}
+
+#dellogo {
+  width: 35%;
+  margin: auto;
+  padding-left: 10px;
+
+  /* border: 1px solid red; */
+}
+#delcart {
+  background-color: transparent;
+  border: none;
+}
+
+#mainDiv div:nth-child(2) {
+  margin-left: 20px;
+  width: 85%;
+
+  /* border: 2px solid green; */
+}
+#mainDiv div:nth-child(3) button:nth-child(1) {
+  /* margin-left: 0px; */
+  /* width: 15%; */
+  margin-left: 20px;
+  /* margin: auto; */
+}
+#mainDiv div:nth-child(4) {
+  /* margin-left: 0px;     */
+  width: 30%;
+  padding: 0% 1%;
+  /* margin: auto; */
+}
+#orderitem {
+  width: 65%;
+  margin: auto;
+  /* border: 1px solid black; */
+  padding: 20px;
+  font-weight: lighter;
+  color: #1c1c1c;
+}
+#orderitem > p {
+  color: aliceblue;
+}
+
+#orderitem h2 {
+  letter-spacing: 2px;
+  font-size: 25px;
+  color: rgba(240, 248, 255, 0.825);
+}
+
+#orderDetails {
+  display: flex;
+  width: 65%;
+  border: 1px solid black;
+  padding: 15px 10px;
+  color: #1c1c1c;
+  font-weight: 550;
+  background-color: aliceblue;
+  border-radius: 7px;
+}
+#orderDetails div i {
+  margin-left: 30%;
+}
+
+#detailsAmount {
+  display: flex;
+  margin: auto;
+}
+#orderDetails div {
+  margin: 5px;
+}
+/* #orderDetails {
+    margin-left: 30%;
+    
+} */
+#amount {
+  border: 1px solid black;
+  display: flex;
+  width: 34%;
+  padding: 10px;
+  margin-left: 10px;
+  background-color: aliceblue;
+  border-radius: 7px;
+}
+#amount button {
+  height: 30%;
+  border: none;
+  background-color: rgba(255, 0, 0, 0.914);
+  color: aliceblue;
+  padding: 12px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+#displayMRP,
+#displayMRPCart {
+  text-decoration-line: line-through;
+  font-size: 15px;
+  font-weight: 550;
+  color: #1c1c1ca4;
+}
+#displayMRP {
+  display: none;
+}
+#detail + div button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #1c1c1ce1;
+}
+#detail + div button:first-child {
+  font-size: 20px;
+}
+#detail + div input {
+  border: 2px solid rgba(128, 128, 128, 0.663);
+  border-radius: 3px;
+  font-weight: 550;
+  padding: 3px;
+  color: #1c1c1cd4;
+}
+#displayMRPfynl,
+#finalAmt {
+  color: #1c1c1cda;
+  font-weight: 550;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+#dellogo {
+  cursor: pointer;
+}
+#dellogo:hover {
+  color: #c67809;
+}
+
+
+
+/* __________footer___________ */
+
+@media only screen and (max-width: 1000px) {
+  #orderitem {
+    width: 95%;
+  }
+
+  #home {
+    width: 30%;
+  }
+  #home img {
+    width: 90%;
+  }
+}
+
