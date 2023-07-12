@@ -13,9 +13,11 @@ main {
 }
 #mainDiv {
   display: flex;
+  justify-content: center;
   background-color: white;
   margin-bottom: 15px;
   border-radius: 7px;
+   
 }
 #mainDiv input {
   width: 12%;
@@ -24,26 +26,28 @@ main {
 }
 
 #mainDiv div {
-  margin: auto;
+ margin: auto;
   margin-left: 10px;
   /*  */
   /* border: 1px solid red; */
 }
 #mainDiv img {
-  height: 120px;
-  /* margin-left: 30%; */
-  /* padding: 30%     ; */
-}
-#mainDiv > div:first-child img:first-child {
-  height: 120px;
-  border: 1px solid gray;
-  border-radius: 5px;
-  /* margin-left: 30%; */
-  /* padding: 30%     ; */
+  height: auto;
+  width: 40%;
 }
 
+#mainDiv > div:first-child img:first-child {
+
+  width: 40%;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+#mainDiv .qtyDiv {
+  display: flex;
+}
 #dellogo {
-  width: 35%;
+  
   margin: auto;
   padding-left: 10px;
 
@@ -55,17 +59,13 @@ main {
 }
 
 #mainDiv div:nth-child(2) {
-  margin-left: 20px;
+text-align: center;
   width: 85%;
+  
 
   /* border: 2px solid green; */
 }
-#mainDiv div:nth-child(3) button:nth-child(1) {
-  /* margin-left: 0px; */
-  /* width: 15%; */
-  margin-left: 20px;
-  /* margin: auto; */
-}
+
 #mainDiv div:nth-child(4) {
   /* margin-left: 0px;     */
   width: 30%;
@@ -155,9 +155,10 @@ main {
 #detail + div input {
   border: 2px solid rgba(128, 128, 128, 0.663);
   border-radius: 3px;
-  font-weight: 550;
-  padding: 3px;
+  font-weight: normal;
+  padding: 8px;
   color: #1c1c1cd4;
+  text-align: center;
 }
 #displayMRPfynl,
 #finalAmt {

@@ -76,7 +76,7 @@ const displayData = (data) => {
     });
     let iconHeart = document.createElement("span");
     iconHeart.setAttribute("id", "removeFromWish");
-    iconHeart.innerHTML = "🗑️";
+    iconHeart.src  = "../Images/delet.svg";
     iconHeart.addEventListener("click", () => {
       getDelete(index);
     });

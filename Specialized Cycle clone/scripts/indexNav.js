@@ -1,8 +1,3 @@
-
-
-
-
-
 // ================================================================= redirection with overlay on homepage starts============================================================= >>
 
 document.querySelector(".navlogo").addEventListener("click", function () {
@@ -11,7 +6,8 @@ document.querySelector(".navlogo").addEventListener("click", function () {
 
   // Redirect to the homepage after 1 second
   setTimeout(function () {
-    window.location.href = "/Web-App-Projeccts/Specialized Cycle clone/index.html";
+    window.location.href =
+      "/Web-App-Projeccts/Specialized Cycle clone/index.html";
   }, 200);
 });
 // ================================================================= redirection with overlay on homepage end============================================================= >>
@@ -24,10 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
     subMenu.classList.toggle("open-menu");
   }
 });
-
-
-
-
 
 // ======================================================================== debouncing start ===================================================================================>>
 
@@ -159,9 +151,7 @@ onAuthStateChanged(auth, (user) => {
 let loginbutton = document.getElementById("loginOption");
 loginbutton.addEventListener("click", function () {
   // Redirect to the login page
-  window.location.href = "../html/signin.html";
-    
-
+  window.location.href = "./html/signin.html";
 });
 
 // Added click event listener to the logout button and signout user
@@ -172,7 +162,7 @@ logoutButton.addEventListener("click", () => {
   signOut(auth)
     .then(() => {
       // Sign-out successful.
-      window.location.href = "../html/signin.html"; // Redirect to the login page after signout
+      window.location.href = "./html/signin.html"; // Redirect to the login page after signout
     })
     .catch((error) => {
       // An error happened.
@@ -180,7 +170,4 @@ logoutButton.addEventListener("click", () => {
     });
 });
 
-
 // ============================================================== Firebase authenctication and auth change ends ==============================================================>>
-
-

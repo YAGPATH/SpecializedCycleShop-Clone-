@@ -260,6 +260,7 @@
     #row {
       display: flex;
       width: 100%;
+      align-items: center;
       /* gap: 1vw; */
       margin: 20px;
       border-radius: 5px;
@@ -279,24 +280,25 @@
     }
     #WishlistBtns > button {
       height: 5vh;
-      background-color: #cf112c;
+      background-color: #1a1a1a;
       border: 0;
-      border-radius: 10vh;
+      border-radius: 5px;
       font-size: 1.61vh;
       font-weight: bold;
       color: aliceblue;
       width: 8.59vw;
       margin-right: 2vw;
       margin-top: 25px;
+      cursor: pointer;
     }
     #WishlistBtns > button:hover {
-      background-color: #e20308;
+      background-color: #eb001b;
     }
     #removeFromWish {
       margin-top: 4vh;
       padding: 0.5vh;
       font-size: 14px;
-  color: rgb(195, 15, 15);
+      cursor: pointer;
     }
     
     #row > * {
@@ -327,6 +329,7 @@
     #thirdDiv {
       font-weight: bold;
       font-size: 1.8vh;
+      align-items: baseline;
     }
     #btnForWishList {
       display: flex;
@@ -352,3 +355,100 @@
       outline: none;
     }
     
+
+   @media screen and (max-width: 700px) {
+  
+
+#containerWishList {
+  width: 70%;
+  margin: auto;
+  margin-right: 20%;
+}
+
+#row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  border-radius: 5px;
+  padding: 10px;
+  border-bottom: 1px solid aliceblue;
+  background-color: #ffffff;
+  box-shadow: #422F0B 0px 7px 30px 4px, #422F0B 0px 2px 16px 0px;
+  text-align: center;
+}
+
+#row > div:nth-child(2) {
+  width: 100%;
+}
+
+.WishlistImage {
+  width: 100%;
+}
+
+#WishlistBtns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  align-items: center;
+}
+
+#WishlistBtns > button {
+  width: 80%;
+ 
+  
+}
+
+#removeFromWish {
+  font-size: 14px;
+  cursor: pointer;
+}
+   }
+/* Responsive styles for screen size 700px to 1200px */
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  #containerWishList {
+  width: 70%;
+  margin: auto;
+  margin-right: 20%;
+}
+
+#row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  border-radius: 5px;
+  padding: 10px;
+  border-bottom: 1px solid aliceblue;
+  background-color: #ffffff;
+  box-shadow: #422F0B 0px 7px 30px 4px, #422F0B 0px 2px 16px 0px;
+  text-align: center;
+}
+
+#row > div:nth-child(2) {
+  width: 100%;
+}
+
+.WishlistImage {
+  width: 100%;
+}
+
+#WishlistBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  align-items: center;
+}
+
+#WishlistBtns > button {
+  width: 80%;
+}
+   }

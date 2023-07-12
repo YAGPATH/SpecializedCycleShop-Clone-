@@ -37,7 +37,8 @@ function displayCart(data) {
     mrp.textContent = "₹ " + ele.price;
     mrp.id = "displayMRPfynl";
 
-    let qty = document.createElement("div"); 
+    let qty = document.createElement("div");
+    qty.className = "qtyDiv";
 
     let disc = document.createElement("button"); // Decrease quantity button
     disc.textContent = "-";
