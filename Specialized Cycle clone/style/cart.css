@@ -8,60 +8,58 @@ body {
 
 main {
   /* background-color: aqua; */
-  color: #1c1c1cda;
+  color: #1c1c1c;
   font-size: 15px;
 }
-#mainDiv {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  margin-bottom: 15px;
-  border-radius: 7px;
-   
-}
+
 #mainDiv input {
-  width: 12%;
-  margin: 0px 5px;
+  width: 20%;
   text-align: center;
+  font-weight: 800;
+  color: #c67809;
 }
 
 #mainDiv div {
- margin: auto;
+  margin: auto;
   margin-left: 10px;
   /*  */
   /* border: 1px solid red; */
 }
-#mainDiv img {
+
+#mainDiv {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  margin-bottom: 15px;
+  border-radius: 7px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#imgDiv {
+  width: 60%;
   height: auto;
-  width: 40%;
+  display: flex;
+  justify-content: center;
 }
 
 #mainDiv > div:first-child img:first-child {
-
   width: 40%;
-  border: 1px solid gray;
   border-radius: 5px;
 }
 
 #mainDiv .qtyDiv {
   display: flex;
 }
-#dellogo {
-  
-  margin: auto;
-  padding-left: 10px;
 
-  /* border: 1px solid red; */
-}
 #delcart {
   background-color: transparent;
   border: none;
 }
 
 #mainDiv div:nth-child(2) {
-text-align: center;
+  text-align: center;
   width: 85%;
-  
 
   /* border: 2px solid green; */
 }
@@ -127,11 +125,15 @@ text-align: center;
 #amount button {
   height: 30%;
   border: none;
-  background-color: rgba(255, 0, 0, 0.914);
+  background-color: #1c1c1c;
   color: aliceblue;
   padding: 12px;
-  border-radius: 3px;
-  font-size: 13px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#amount button:hover {
+background-color: #eb030b;
 }
 #displayMRP,
 #displayMRPCart {
@@ -152,15 +154,14 @@ text-align: center;
 #detail + div button:first-child {
   font-size: 20px;
 }
-#detail + div input {
-  border: 2px solid rgba(128, 128, 128, 0.663);
-  border-radius: 3px;
+#detail {
+  align-items: center;
   font-weight: normal;
   padding: 8px;
   color: #1c1c1cd4;
   text-align: center;
 }
-#displayMRPfynl,
+
 #finalAmt {
   color: #1c1c1cda;
   font-weight: 550;
@@ -170,25 +171,137 @@ text-align: center;
 
 #dellogo {
   cursor: pointer;
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
 }
+
 #dellogo:hover {
   color: #c67809;
 }
 
 
+@media screen and (min-width: 300px) and  (max-width: 800px) {
+  main {
+    font-size: 13px;
+  }
 
-/* __________footer___________ */
-
-@media only screen and (max-width: 1000px) {
-  #orderitem {
+  #mainDiv {
     width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-bottom: 10%;
+    
   }
-
-  #home {
-    width: 30%;
-  }
-  #home img {
-    width: 90%;
-  }
+#imgDiv {
+ 
+  width: 100%;
+  margin: auto;
+}
+#imgDiv img{
+  margin-top: 20px;
+}
+#detail {
+  border-top: 1px solid #bdbaba;
+ 
+ 
+  padding: 8px;
+  color: #1c1c1cd4;
+  text-align: center;
+}
+.qtyDiv {
+  justify-content: center;
+}
+#finalPrice {
+  width: 100%;
+  text-align: center;
+  margin-left: 100%;
+  font-weight: 900;
+  
+}
+#delcart {
+  margin-left: 80px;
+}
+#detailsAmount {
+  flex-direction: column-reverse;
+}
+#detailsAmount #amount {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5%;
+}
+#detailsAmount #orderDetails {
+  width: 90%;
+  margin: auto;
 }
 
+}
+@media screen and (min-width: 700px) and  (max-width: 1200px) {
+  main {
+    font-size: 13px;
+  }
+
+  #mainDiv {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-bottom: 10%;
+    
+  }
+#imgDiv {
+ 
+  width: 100%;
+  margin: auto;
+}
+#imgDiv img{
+  margin-top: 20px;
+}
+#detail {
+  border-top: 1px solid #bdbaba;
+  font-weight:400;
+  padding: 8px;
+  color: #1c1c1cd4;
+  text-align: center;
+}
+.qtyDiv {
+  justify-content: flex-end;
+
+  
+}
+#finalPrice {
+  width: 100%;
+  text-align: center;
+  margin-left: 95%;
+  font-weight: 900;
+ 
+}
+#delcart {
+ margin-left: 190px;
+}
+#detailsAmount {
+  flex-direction: column-reverse;
+}
+#detailsAmount #amount {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5%;
+}
+#detailsAmount #orderDetails {
+  width: 90%;
+  margin: auto;
+}
+
+}
