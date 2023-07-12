@@ -17,7 +17,7 @@ body{
 }
 
 @keyframes slider {
-    0%{background-image: url(https://images.pexels.com/photos/8926943/pexels-photo-8926943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);}
+    0%{background-image: url(https://images.pexels.com/photos/8926943/pexels-photo-8926943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)}
     35%{background-image: url(https://images.pexels.com/photos/260409/pexels-photo-260409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);}
     75%{background-image: url(https://images.pexels.com/photos/3569754/pexels-photo-3569754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);}
 }
@@ -54,7 +54,7 @@ body{
 }
 
 #homepage-container #product-image {
-    width: 300px;
+    width: 250px;
 }
 
 #homepage-container #bs {
@@ -72,6 +72,7 @@ body{
 }
 
 #homepage-container #product {
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -234,90 +235,215 @@ body{
     box-shadow: #C68409 0px 1px 10px 0px;
 }
 
-@media only screen and (max-width: 1900px){
-    #homepage-container #contact {
-        display: none;
+@media screen and (min-width: 300px) and (max-width: 800px) {
+     #homepage-container #body-start {
+        /* Adjust padding for smaller screens */
+        padding: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
+
+    #homepage-container #body-start1 {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        /* Adjust font size for smaller screens */
+    }
+
+    #homepage-container #body-start2 {
+        font-size: 16px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        /* Adjust font size for smaller screens */
+    }
+
+    #homepage-container #body-start3.button {
+        font-size: 14px;
+        /* Adjust font size for smaller screens */
+    }
+
+    /* Add any additional styles for smaller screens */
+
+
+/* Default styles for all screen sizes */
+
+#homepage-container #best-sellers {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
 }
 
-@media only screen and (max-width: 1600px){
-    #homepage-container #contact {
-        display: none;
-    }
-
-    #homepage-container #category {
-        display: none;
-    }
+#homepage-container #best-sellers-title {
+   width: 90%;
+   font-size: 25px;
+   text-align: center;
 }
 
-@media only screen and (max-width: 1430px){
-    #homepage-container #contact {
-        display: none;
+#homepage-container #bt {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+     #homepage-container #brain-tech-title,#body-tech1   {
+        width: 90%;
+   font-size: 25px;
+   text-align: center;
+     }
+
+    #homepage-container #brain-tech {
+        height: auto;
+        text-align: center; /* Allow height to adjust based on content */
     }
 
-    #homepage-container #category {
-        display: none;
+    #homepage-container #brain-tech3 {
+       font-size: 18px;
     }
-
-    #homepage-container #hide {
-        display: none;
+    #homepage-container #more1top {
+        width: 90%; /* Adjust width for smaller screens */
+        height: 300px; /* Adjust height for smaller screens */
+        padding: 25px; /* Adjust padding for smaller screens */
     }
+     #homepage-container #more1 #head {
+    font-size: 20px; /* Adjust font size for smaller screens */
+}
+ #homepage-container #more1 #para {
+    font-size: 12px; /* Adjust font size for smaller screens */
 }
 
-@media only screen and (max-width: 1150px){
-   #homepage-container #contact {
-        display: none;
+    #homepage-container #more2 {
+        flex-direction: column; /* Adjust flex-direction for smaller screens */
+        align-items: center;
     }
 
-    #homepage-container #category {
-        display: none;
+    #homepage-container #more2left {
+        display: none; 
     }
-
-    #homepage-container #hide {
-        display: none;
+    #homepage-container #more2right {
+        width: 90%; /* Adjust width for smaller screens */
+        height: 300px; /* Adjust height for smaller screens */
+        padding: 30px; /* Adjust padding for smaller screens */
     }
-
-    #homepage-container #body-start {
-        width: 80%;
-    }
+    #homepage-container #more2 #head {
+    font-size: 20px; /* Adjust font size for smaller screens */
+}
+ #homepage-container #more2 #para {
+    font-size: 14px; /* Adjust font size for smaller screens */
 }
 
-@media only screen and (max-width: 1050px){
-    #homepage-container #contact {
-        display: none;
-    }
 
-    #homepage-container #category {
-        display: none;
-    }
-
-    #homepage-container #search {
-        display: none;
-    }
-
-    #homepage-container #top {
-        margin: 0;
-    }
+    /* Add any additional styles for smaller screens */
 }
 
-@media only screen and (max-width: 930px){
-    #homepage-container #contact {
-        display: none;
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+
+#homepage-container #body-start {
+        /* Adjust padding for smaller screens */
+        padding: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
-    #homepage-container #category {
-        display: none;
+    #homepage-container #body-start1 {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        /* Adjust font size for smaller screens */
     }
 
-    #homepage-container #search {
-        display: none;
+    #homepage-container #body-start2 {
+        font-size: 16px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        /* Adjust font size for smaller screens */
     }
 
-    #homepage-container #top {
-        margin: 0;
+    #homepage-container #body-start3.button {
+        font-size: 14px;
+        /* Adjust font size for smaller screens */
     }
 
-    #homepage-container #body-start {
-        display: none;
+    /* Add any additional styles for smaller screens */
+
+
+/* Default styles for all screen sizes */
+
+#homepage-container #best-sellers {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+#homepage-container #best-sellers-title {
+   width: 90%;
+   font-size: 25px;
+   text-align: center;
+}
+
+#homepage-container #bt {
+        width: 90%; /* Adjust width for smaller screens */
     }
+     #homepage-container #brain-tech-title,#body-tech1   {
+        width: 90%;
+   font-size: 25px;
+   text-align: center;
+     }
+
+    #homepage-container #brain-tech {
+        height: auto;
+        text-align: center; /* Allow height to adjust based on content */
+    }
+
+    #homepage-container #brain-tech3 {
+       font-size: 18px;
+    }
+    #homepage-container #more1top {
+        width: 90%; /* Adjust width for smaller screens */
+        height: 300px; /* Adjust height for smaller screens */
+        padding: 25px; /* Adjust padding for smaller screens */
+    }
+     #homepage-container #more1 #head {
+    font-size: 20px; /* Adjust font size for smaller screens */
+}
+ #homepage-container #more1 #para {
+    font-size: 12px; /* Adjust font size for smaller screens */
+}
+
+    #homepage-container #more2 {
+        flex-direction: column; /* Adjust flex-direction for smaller screens */
+        align-items: center;
+    }
+
+    #homepage-container #more2left {
+        display: none; 
+    }
+    #homepage-container #more2right {
+        width: 90%; /* Adjust width for smaller screens */
+        height: 300px; /* Adjust height for smaller screens */
+        padding: 30px; /* Adjust padding for smaller screens */
+    }
+    #homepage-container #more2 #head {
+    font-size: 20px; /* Adjust font size for smaller screens */
+}
+ #homepage-container #more2 #para {
+    font-size: 14px; /* Adjust font size for smaller screens */
+}
+
+
+    /* Add any additional styles for smaller screens */
+
 }

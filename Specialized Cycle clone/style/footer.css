@@ -135,42 +135,95 @@ font-size: 14px;
   color: #b8b3b3;
   
 }
-@keyframes flowAnimation {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  20% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  80% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-}
+
 #footer-container .animated-text {
   animation: flowAnimation 7s infinite linear;
   white-space: nowrap;
-  overflow: hidden;
+  width: ;
+  text-align: center;
 }
 
 #footer-container .animated-text span {
-  animation: flowAnimation 3s infinite linear;
   display: inline-block;
+  opacity: 0; /* Initially hide the spans */
+  position: relative; /* Position the spans */
+  top: -20px; /* Move the spans up initially */
+  animation: appearVibrateDisappearAnimation 8s infinite;
 }
-@keyframes vibrationAnimation {
-  0%, 100% {
-    transform: translateX(-2px) rotate(-1deg);
+
+@keyframes appearVibrateDisappearAnimation {
+  0% {
+    opacity: 0; /* Hide the spans */
+    top: -20px; /* Move the spans up */
   }
-  50% {
-    transform: translateX(2px) rotate(1deg);
+  10% {
+    opacity: 1; /* Show the spans */
+    top: 0; /* Bring the spans back to their original position */
+  }
+  30% {
+    opacity: 1; /* Keep the spans visible */
+    top: 0; /* Maintain the position */
+  }
+  70% {
+    opacity: 1; /* Keep the spans visible */
+    top: 0; /* Maintain the position */
+  }
+  80% {
+    opacity: 1; /* Keep the spans visible */
+    top: 0; /* Maintain the position */
+    transform: translateX(-2px) rotate(-1deg); /* Vibration effect */
+  }
+  82% {
+    opacity: 1; /* Keep the spans visible */
+    top: 0; /* Maintain the position */
+    transform: translateX(2px) rotate(1deg); /* Vibration effect */
+  }
+  84% {
+    opacity: 1; /* Keep the spans visible */
+    top: 0; /* Maintain the position */
+    transform: translateX(-2px) rotate(-1deg); /* Vibration effect */
+  }
+  86% {
+    opacity: 1; /* Keep the spans visible */
+    top: 0; /* Maintain the position */
+    transform: translateX(2px) rotate(1deg); /* Vibration effect */
+  }
+  88% {
+    opacity: 1; /* Keep the spans visible */
+    top: 0; /* Maintain the position */
+    transform: translateX(-2px) rotate(-1deg); /* Vibration effect */
+  }
+  90% {
+    opacity: 1; /* Keep the spans visible */
+    top: 0; /* Maintain the position */
+    transform: translateX(2px) rotate(1deg); /* Vibration effect */
+  }
+  92% {
+    opacity: 1; /* Keep the spans visible */
+    top: 0; /* Maintain the position */
+    transform: translateX(-2px) rotate(-1deg); /* Vibration effect */
+  }
+  94% {
+    opacity: 1; /* Keep the spans visible */
+    top: 0; /* Maintain the position */
+    transform: translateX(2px) rotate(1deg); /* Vibration effect */
+  }
+  96% {
+    opacity: 1; /* Keep the spans visible */
+    top: 0; /* Maintain the position */
+    transform: translateX(-2px) rotate(-1deg); /* Vibration effect */
+  }
+  98% {
+    opacity: 1; /* Keep the spans visible */
+    top: 0; /* Maintain the position */
+    transform: translateX(2px) rotate(1deg); /* Vibration effect */
+  }
+  100% {
+    opacity: 0; /* Hide the spans */
+    top: 20px; /* Move the spans down */
   }
 }
+
 
 #footer-container .animated-copyright {
     
@@ -223,6 +276,7 @@ font-size: 14px;
 
   #footer-container .newsletter {
     text-align: center;
+    margin: 5%;
     display: flex;
     width: 100%;
   }
@@ -232,8 +286,9 @@ font-size: 14px;
  #footer-container h4 {
     margin-bottom: 0%;
   }
- #footer-container .footer-bottom p{
-  margin: 5%;
+ #footer-container .footer-bottom {
+  width: 90%;
+  margin: auto;
 }
   #footer-container .about {
     display: none !important;
@@ -263,6 +318,7 @@ font-size: 14px;
 
   #footer-container .newsletter {
     text-align: center;
+    margin: 5%;
     display: flex;
     width: 100%;
   }
