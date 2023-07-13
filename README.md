@@ -1,5 +1,5 @@
 
-# Specialized Cycle Shop Clone 
+# Specialized Cycle Shop Clone (Enhanced Version)
 
 This GitHub repository contains the final enhanced version of a cycle shop website. Initially developed as a group project with a team of five members during the Construct Week at Masai School,After the conclusion of the group project, this cycle shop website underwent significant enhancements and refinements carried out entirely by me. As the sole contributor, I took the initiative to address issues and implement improvements, resulting in a final version that showcases my individual efforts and skills.
 
