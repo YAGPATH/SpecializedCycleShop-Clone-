@@ -76,7 +76,7 @@ The Cycle Shop Website is designed to be fully responsive, providing an optimal 
 
 - Responsive Layout: The website utilizes a responsive layout design, adapting its structure and content dynamically based on the screen size. This allows users to comfortably view and interact with the website on different devices, such as desktop computers, laptops, tablets, and mobile phones.
 
-- ![](/Images/Screenshots/Responsive%20Profile%20Menu.png)
+- ![](/Images/Screenshots/Responsive%20HomePage%20Screenshot.png)
 
 - Media Queries: Media queries are implemented in the CSS code to apply specific styles and layout adjustments based on the device's screen size. This enables the website to respond and adapt to different breakpoints, providing an optimized view for each device.
    
