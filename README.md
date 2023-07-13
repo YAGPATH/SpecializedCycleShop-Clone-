@@ -12,7 +12,7 @@ I am proud to present this enhanced version, which demonstrates my expertise, de
 ## Key Improvements:
 
   - Responsiveness: The website has been made fully responsive, ensuring optimal viewing and usability across various devices and screen sizes.
-    - ![](/Images/Screenshots/Responsive%20HomePage%20Screenshot.png)
+    - ![](/Images/Screenshots/Responsive%20Profile%20Menu.png)
     
   - Price Calculation Logic: The price calculation logic has been corrected, resulting in accurate pricing information for products.
     
@@ -34,7 +34,7 @@ I am proud to present this enhanced version, which demonstrates my expertise, de
 
 - **Navbar and Profile Menu :** The website includes a fully functional navbar with a well-designed profile menu. The profile menu displays user-specific information, such as profile picture, username, and other relevant data.
 
-- ![](/Images/Screenshots/Profile%20Menu%20Screenshot.png)
+- ![](/Images/Screenshots/Navn%20Profile%20Info%20Menu%20Screenshot.pngg)
 
 
 
@@ -76,6 +76,8 @@ The Cycle Shop Website is designed to be fully responsive, providing an optimal 
 
 - Responsive Layout: The website utilizes a responsive layout design, adapting its structure and content dynamically based on the screen size. This allows users to comfortably view and interact with the website on different devices, such as desktop computers, laptops, tablets, and mobile phones.
 
+- ![](/Images/Screenshots/Responsive%20Profile%20Menu.png)
+
 - Media Queries: Media queries are implemented in the CSS code to apply specific styles and layout adjustments based on the device's screen size. This enables the website to respond and adapt to different breakpoints, providing an optimized view for each device.
    
 - Flexible Images: Images within the website are made responsive using CSS techniques such as max-width: 100% and height: auto. This ensures that images scale proportionally and adjust appropriately within the available space, preventing them from overflowing or becoming distorted on smaller screens.
@@ -85,7 +87,7 @@ The Cycle Shop Website is designed to be fully responsive, providing an optimal 
 - Touch-Friendly Elements: Interactive elements, such as buttons and navigation menus, are designed with touch-friendly features to accommodate mobile and tablet users. This includes providing sufficient spacing between elements to prevent accidental taps, using appropriate touch events, and ensuring clickable areas are large enough for easy interaction.
 
 
- - ![](/Images/Screenshots/Responsive%20HomePage%20Screenshot.png)
+ 
  
 
  ## Complete Website layout

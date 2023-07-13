@@ -402,7 +402,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
   }
 
   #homepage-container #best-sellers-title {
@@ -460,6 +460,10 @@ body {
   #homepage-container #more2 #para {
     font-size: 14px; /* Adjust font size for smaller screens */
   }
-
+  
+  #homepage-container #product-image {
+  width: 100%;
+  height: auto;
+}
   /* Add any additional styles for smaller screens */
 }
