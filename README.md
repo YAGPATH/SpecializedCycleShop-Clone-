@@ -86,17 +86,11 @@ The Cycle Shop Website is designed to be fully responsive, providing an optimal 
 
 
  - ![](/Images/Screenshots/Responsive%20HomePage%20Screenshot.png)
- - ![](/Images/Screenshots/Responsive%20Profile%20Menu.png)
- - ![](/Images/Screenshots/Responsive%20signin%20Page.png)
- - ![](/Images/Screenshots/Responsive%20Signup%20Page%20for%20Tablet.png)
-
+ 
 
  ## Complete Website layout
  - ![](/Images/Screenshots/Homepage%20Screenshot.png)
- - ![](/Images/Screenshots/WhishList%20Page%20Screenshot.png)
- - ![](/Images/Screenshots/Cart%20PAge%20Screenshot.png)
- - ![](/Images/Screenshots/Catalogue%20Page%20ScreenShot.png)
- - ![](/Images/Screenshots/Payment%20Page%20screenshot.png)
+ 
 
 
 
