@@ -12,23 +12,29 @@ I am proud to present this enhanced version, which demonstrates my expertise, de
 ## Key Improvements:
 
   - Responsiveness: The website has been made fully responsive, ensuring optimal viewing and usability across various devices and screen sizes.
+    - ![](/Images/Screenshots/Responsive%20HomePage%20Screenshot.png)
     
   - Price Calculation Logic: The price calculation logic has been corrected, resulting in accurate pricing information for products.
     
   - Wishlist Page Fixes: Issues with the wishlist page have been identified and addressed, leading to a smooth and seamless user experience.
     
-  - इAdditional Enhancements: Several other refinements and enhancements have been implemented to improve the overall functionality and user experience of the website.
+  - Additional Enhancements: Several other refinements and enhancements have been implemented to improve the overall functionality and user experience of the website.
 
 
 ## Features
 
 - **User Authentication :** The website utilizes the Firebase library for user authentication, allowing users to sign in and sign out securely. It also includes an "on auth change" functionality to handle user sessions effectively. 
+![](/Images/Screenshots/SignInPage%20Screenshot.png.png)
+![](/Images/Screenshots/SignupPage%20Screenshot.png.png)
+
  
 - **Product Data :** The website retrieves product information from a JSON server API. The JSON server acts as a mock server, hosting all the necessary data related to the products.
   
+  - ![](/Images/Screenshots/OffRoad%20page%20Screenshot.png)
+
 - **Navbar and Profile Menu :** The website includes a fully functional navbar with a well-designed profile menu. The profile menu displays user-specific information, such as profile picture, username, and other relevant data.
 
-![](/Images/Screenshots/Navn%20Profile%20Info%20Menu%20Screenshot.png)
+- ![](/Images/Screenshots/Profile%20Menu%20Screenshot.png)
 
 
 
@@ -36,11 +42,9 @@ I am proud to present this enhanced version, which demonstrates my expertise, de
 
 ## Deployment
 
-The cycle shop website and JSON Server API have been deployed using different platforms. Here are the details and links for each deployment:
+- You can access the deployed website using the following link: https://specialized-cycle-shop.netlify.app
 
-- **Website Deployment (Front-end):** The cycle shop website is deployed on Netlify. You can access the deployed website using the following link: https://specialized-cycle-shop.netlify.app
 
-- **API Deployment (JSON Server):** The JSON Server hosting the product data API is deployed separately. You can access the deployed JSON Server using the following link: Cycle Shop JSON Server API
 
 
 
@@ -81,6 +85,18 @@ The Cycle Shop Website is designed to be fully responsive, providing an optimal 
 - Touch-Friendly Elements: Interactive elements, such as buttons and navigation menus, are designed with touch-friendly features to accommodate mobile and tablet users. This includes providing sufficient spacing between elements to prevent accidental taps, using appropriate touch events, and ensuring clickable areas are large enough for easy interaction.
 
 
+ - ![](/Images/Screenshots/Responsive%20HomePage%20Screenshot.png)
+ - ![](/Images/Screenshots/Responsive%20Profile%20Menu.png)
+ - ![](/Images/Screenshots/Responsive%20signin%20Page.png)
+ - ![](/Images/Screenshots/Responsive%20Signup%20Page%20for%20Tablet.png)
+
+
+ ## Complete Website layout
+ - ![](/Images/Screenshots/Homepage%20Screenshot.png)
+ - ![](/Images/Screenshots/WhishList%20Page%20Screenshot.png)
+ - ![](/Images/Screenshots/Cart%20PAge%20Screenshot.png)
+ - ![](/Images/Screenshots/Catalogue%20Page%20ScreenShot.png)
+ - ![](/Images/Screenshots/Payment%20Page%20screenshot.png)
 
 
 
